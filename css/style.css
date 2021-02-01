@@ -1,0 +1,45 @@
+:root {
+  --main-red: #dd3333;
+  --main-black: #0c0c0c;
+  --main-grey: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-black);
+  width: 100%;
+  height: auto;
+}
+
+#nav-list {
+  display: flex;
+  font: normal 700 14px / 18px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a {
+  padding: 1em;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/* #nav-brand {
+
+} */
+
+/* #nav-logo {
+  width: 305px;
+} */
