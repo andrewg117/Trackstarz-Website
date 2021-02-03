@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   word-spacing: normal;
+  font: 18px Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -21,7 +22,6 @@ body {
 a {
   text-decoration: none;
   color: #fff;
-  font: 18px Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -53,7 +53,7 @@ ul {
   font-size: 90%;
 }
 
-.nav-promo a:hover {
+.nav-promo a:hover, i:hover {
   color: var(--main-linkgrey);
 }
 
@@ -94,13 +94,31 @@ ul {
   margin-top: 900px;
 }
 
+.to-top {
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  position: fixed;
+  background-color: var(--main-linkgrey);
+  color: #fff;
+  width: 25px;
+  height: 25 px;
+  text-align: center;
+}
+
 .foot-bar {
   left: 0;
   bottom: 0;
   width: 100%;
   height: auto;
+  padding: 3em 0;
   background-color: var(--main-black);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.foot-bar p {
+  color: #fff;
+  font-size: .9em;
 }
