@@ -17,6 +17,10 @@ body {
   grid-template-rows: auto;
   grid-template-columns: 100%;
   position: relative;
+  grid-template-areas: 
+    "Header Header Header"
+    "Content Content Content"
+    "Footer Footer Footer";
 }
 
 a {
@@ -32,10 +36,11 @@ ul {
 .head-bar {
   top: 0;
   left: 0;
-  position: fixed;
+  grid-area: Header;
+  /* position: fixed;
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: column; */
+  width: 100vw;
   height: 140px;
 }
 
@@ -43,7 +48,7 @@ ul {
 .nav-promo {
   display: flex;
   background-color: var(--main-red);
-  width: 100%;
+  width: 100wv;
   height: 25%;
   padding: 0 2em 0 2em;
 }
@@ -60,7 +65,7 @@ ul {
 .navbar-menu {
   display: flex;
   background-color: var(--main-black);
-  width: 100%;
+  width: 100wv;
   height: 75%;
   padding: 0 2em 0 2em;
 }
@@ -90,9 +95,7 @@ ul {
   color: var(--main-red);
 }
 
-.btm-pad {
-  margin-top: 900px;
-}
+
 
 .to-top {
   bottom: 0;
@@ -107,9 +110,10 @@ ul {
 }
 
 .foot-bar {
+  grid-area: Footer;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100wv;
   height: auto;
   padding: 3em 0;
   background-color: var(--main-black);
@@ -121,4 +125,37 @@ ul {
 .foot-bar p {
   color: #fff;
   font-size: .9em;
+}
+
+#content-section {
+  grid-area: Content;
+  display: grid;
+  height: 150vh;
+  grid-template-rows: auto;
+  grid-template-columns: 3 1;
+  grid-template-areas: 
+    "Main Main Main Side";
+  margin: 2em auto;
+  grid-column-gap: 1.5em;
+  width: 75vw;
+}
+
+#main-content {
+  grid-area: Main;
+  background-color: var(--main-linkgrey);
+  /* border: 2px solid black; */
+
+}
+#side-content {
+  grid-area: Side;
+  background-color: var(--main-linkgrey);
+  /* border: 2px solid black; */
+
+}
+
+.content-title {
+  font-size: 3em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--main-grey);
 }
